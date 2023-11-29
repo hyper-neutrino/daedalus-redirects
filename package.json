@@ -1,0 +1,16 @@
+{
+    "name": "daedalus-redirects",
+    "version": "1.0.50",
+    "scripts": {
+        "dev": "bun run --watch src/index.ts | pino-pretty -i hostname,pid",
+        "start": "bun src/index.ts | pino-pretty -i hostname,pid"
+    },
+    "dependencies": {
+        "elysia": "latest",
+        "pino": "^8.16.2"
+    },
+    "devDependencies": {
+        "bun-types": "latest"
+    },
+    "module": "src/index.js"
+}
