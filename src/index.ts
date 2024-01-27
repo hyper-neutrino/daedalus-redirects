@@ -62,7 +62,7 @@ let app = new Elysia()
     .get("/modmail/:gid/:id", ({ set, params: { gid, id } }) =>
         f(set, `/old/modmail/${gid}/${id}`)
     )
-    .get("/ticket/:gid/:id", ({ set, params: { gid, id } }) =>
+    .get("/tickets/:gid/:id", ({ set, params: { gid, id } }) =>
         f(set, `/old/ticket/${gid}/${id}`)
     )
     .get("/auth/:path", ({ set, params: { path } }) => f(set, `/auth/${path}`))
